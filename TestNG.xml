@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="Dunblare">  
+  <listeners>
+  <listener class-name="com.Dunblare.utilities.Reporting" />
+  </listeners>
+ 
+   <test name="Dunblare Warehouse">  
+  	<parameter name="browser" value="chrome" />
+    <classes>  
+  		<!-- Normal Test case -->
+      <!--  <class name="com.Dunblare.testCases.TC_LoginTest_001"/>-->
+         <!-- Data Driven Test Case -->
+   <!--     <class name="com.Dunblare.testCases.TC_LoginDDT_002"/>  -->
+      <class name="com.Dunblare.testCases.TC_AddInventory_003"/> 
+    </classes>  
+   </test> <!-- Test -->  
+</suite> <!-- Suite -->  
